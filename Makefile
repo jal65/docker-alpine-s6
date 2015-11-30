@@ -8,5 +8,5 @@
 .nginx:
 	cd nginx && make
 
-default: .base .ssh
+default: .base .ssh .nginx
 	docker images | grep shomodj
