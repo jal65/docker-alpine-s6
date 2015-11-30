@@ -1,0 +1,4 @@
+#!/bin/sh
+
+ssh-keygen -A
+exec /usr/sbin/sshd -f /etc/ssh/sshd_config -D
