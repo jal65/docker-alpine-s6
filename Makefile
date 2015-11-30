@@ -8,5 +8,8 @@
 .nginx:
 	cd nginx && make
 
-default: .base .ssh .nginx
+.php-fpm:
+	cd php-fpm && make
+
+default: .base .ssh .nginx .php-fpm
 	docker images | grep shomodj
