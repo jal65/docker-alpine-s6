@@ -17,5 +17,5 @@
 .devel:
 	cd devel && make
 
-default: .base .ssh .nginx .php-fpm .mariadb 
+default: .base .ssh .nginx .php-fpm .mariadb
 	docker images | grep shomodj
