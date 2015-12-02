@@ -4,4 +4,4 @@ CONFIG_FILE="/etc/rsyslog.conf"
 PID_FILE="/var/run/rsyslogd.pid"
 RSYSLOG_OPTS="-n"
 
-/usr/sbin/rsyslogd ${RSYSLOG_OPTS} -f ${CONFIG_FILE} -i ${PID_FILE}
+exec /usr/sbin/rsyslogd ${RSYSLOG_OPTS} -f ${CONFIG_FILE} -i ${PID_FILE}
