@@ -1,3 +1,3 @@
 #!/bin/sh
 
-apk add rsyslog rsyslog-tls
+apk add rsyslog
