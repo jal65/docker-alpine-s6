@@ -11,5 +11,8 @@
 .php-fpm:
 	cd php-fpm && make
 
-default: .base .ssh .nginx .php-fpm
+.mariadb:
+	cd mariadb && make
+
+default: .base .ssh .nginx .php-fpm .mariadb
 	docker images | grep shomodj
