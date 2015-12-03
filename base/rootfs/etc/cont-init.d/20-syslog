@@ -1,4 +1,0 @@
-#!/bin/sh
-
-addgroup -S -g 501 syslog
-adduser -S -h /var/log/syslog -s /sbin/nologin -g syslog -G syslog -u 501 syslog
