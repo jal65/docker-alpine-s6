@@ -1,5 +1,6 @@
-#!/usr/bin/with-contenv sh
+#!/bin/execlineb -P
 
-#s6-svwait /var/run/s6/services/syslog
+exec -c
+fdmove -c 2 1
 
-exec /usr/sbin/crond -f -S -l 0 -c /etc/crontabs
+/usr/sbin/crond -f -d 0 -c /etc/crontabs
