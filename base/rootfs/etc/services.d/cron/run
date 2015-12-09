@@ -1,0 +1,3 @@
+#!/usr/bin/with-contenv sh
+
+exec /usr/sbin/crond -f -S -l 0 -d 8 -c /etc/crontabs
