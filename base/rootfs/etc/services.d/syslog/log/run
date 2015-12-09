@@ -1,0 +1,4 @@
+#!/bin/execlineb -P
+
+exec -c
+s6-log T s1000000 n10 /var/log/syslog
