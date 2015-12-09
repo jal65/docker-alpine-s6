@@ -1,0 +1,10 @@
+#!/bin/sh
+
+apk add syslog-ng
+
+cd /etc/syslog-ng && rm syslog-ng-*.std
+
+rm /var/log/auth.log
+rm /var/log/error.log
+rm /var/log/kern.log
+rm /var/log/mail.log

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-exec /usr/sbin/syslog-ng -F --pidfile /run/syslog-ng.pid
+exec /usr/sbin/syslog-ng -F -v --pidfile /run/syslog-ng.pid
