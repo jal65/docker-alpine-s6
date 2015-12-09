@@ -1,3 +1,0 @@
-#!/usr/bin/with-contenv sh
-
-exec /usr/sbin/syslog-ng -F -v --pidfile /run/syslog-ng.pid
