@@ -1,1 +1,2 @@
-f T /var/log/syslog
+- +^[a-zA-Z]+\s\d+\s\d+\:\d+\:\d+\s[a-z0-9]+\scron\. /var/log/syslog/cron
+f /var/log/syslog/messages
